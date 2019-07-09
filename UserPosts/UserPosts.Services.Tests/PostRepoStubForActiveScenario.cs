@@ -3,7 +3,7 @@ using UserPosts.Domain;
 
 namespace UserPosts.Services.Tests
 {
-    public class PostRepoStubForInactiveScenario : IPostRepository
+    public class PostRepoStubForActiveScenario : IPostRepository
     {
         public IList<Post> GetAll()
         {
@@ -19,6 +19,8 @@ namespace UserPosts.Services.Tests
         {
             var list = new List<Post>();
 
+            list.Add(new Post());
+            list.Add(new Post());
             list.Add(new Post());
             list.Add(new Post());
             list.Add(new Post());

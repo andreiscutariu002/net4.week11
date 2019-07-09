@@ -3,7 +3,7 @@ using UserPosts.Domain;
 
 namespace UserPosts.Services.Tests
 {
-    public class UserDummyRepo : IUserRepository
+    public class UserRepoStub : IUserRepository
     {
         public IList<User> GetAll()
         {
